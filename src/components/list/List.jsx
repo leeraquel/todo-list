@@ -6,7 +6,7 @@ const List = () => {
   const items = useSelector((state) => state.items.items);
   const dispatch = useDispatch();
   const handleDeleteClick = (index) => {
-    dispatch(deleteItem(index)); // 인덱스를 사용하여 항목을 삭제합니다.
+    dispatch(deleteItem(index));
   };
   return (
     <div>
