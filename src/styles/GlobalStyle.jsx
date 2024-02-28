@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
 }
+
+  * {font-family: 'Ownglyph_meetme-Rg',-apple-system,
+      sans-serif;}
   body {
     margin: 0;
     padding: 0;
