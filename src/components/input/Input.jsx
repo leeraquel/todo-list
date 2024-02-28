@@ -18,7 +18,7 @@ const Input = () => {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <input
         type="text"
         value={inputValue}

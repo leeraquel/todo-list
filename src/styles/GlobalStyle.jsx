@@ -1,18 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Ownglyph_meetme-Rg';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+ @font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
 }
 
   /* * {
     font-family: 'Ownglyph_meetme-Rg',-apple-system, sans-serif;} */
 
     body, input, button {
-    font-family: 'Ownglyph_meetme-Rg', -apple-system, sans-serif;
+  font-family: 'S-CoreDream-3Light', -apple-system, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -24,8 +24,8 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 4px;
     box-sizing: border-box;
     display: block;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    font-size: 1rem;
   }
 
   input:focus {
@@ -33,22 +33,25 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background-color: #4CAF50;
+    background-color: pink;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 88px;
+    text-align: center;
   }
 
   button:hover {
-    background-color: #45a049;
+    background-color: #ffafbc;
   }
 
   ul {
     list-style-type: none;
     padding: 0;
+    width: 500px;
   }
 
   li {
@@ -60,7 +63,17 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
 
 

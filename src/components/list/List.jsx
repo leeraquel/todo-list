@@ -12,10 +12,10 @@ const List = () => {
     <div>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>
-            {item}
+          <div>
+            <li key={index}>{item}</li>
             <button onClick={() => handleDeleteClick(index)}>Delete</button>
-          </li>
+          </div>
         ))}
       </ul>
     </div>
