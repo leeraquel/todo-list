@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteItem } from "../../store/itemsSlice";
+import styled from "styled-components";
 
 const List = () => {
   const items = useSelector((state) => state.items.items);
@@ -9,17 +10,24 @@ const List = () => {
     dispatch(deleteItem(index));
   };
   return (
-    <div>
+    <>
       <ul>
         {items.map((item, index) => (
-          <div>
+          <Wrapper className="wrapper">
             <li key={index}>{item}</li>
             <button onClick={() => handleDeleteClick(index)}>Delete</button>
-          </div>
+          </Wrapper>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
+
+const Wrapper = styled.div`
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 16px;
+  border-radius: 4px;
+`;
 
 export default List;

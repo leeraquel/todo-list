@@ -6,12 +6,9 @@ const GlobalStyle = createGlobalStyle`
      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
      font-weight: normal;
      font-style: normal;
-}
+  }
 
-  /* * {
-    font-family: 'Ownglyph_meetme-Rg',-apple-system, sans-serif;} */
-
-    body, input, button {
+  body, input, button {
   font-family: 'S-CoreDream-3Light', -apple-system, sans-serif;
     margin: 0;
     padding: 0;
@@ -24,8 +21,9 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 4px;
     box-sizing: border-box;
     display: block;
-    width: 100%;
+    flex-grow: 1;
     font-size: 1rem;
+    flex-grow: 1;
   }
 
   input:focus {
@@ -40,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 88px;
+    width: 85px;
     text-align: center;
   }
 
@@ -51,29 +49,22 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
     padding: 0;
-    width: 500px;
   }
 
   li {
-    padding: 8px;
-    margin-top: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    text-align: left;
   }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    gap: 8px;
     margin-top: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 4px;
+    width: 500px;
+    padding: 8px;
   }
 
 

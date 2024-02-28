@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store/itemsSlice";
+import styled from "styled-components";
 
 const Input = () => {
   const [inputValue, setInputValue] = useState("");
@@ -18,7 +19,7 @@ const Input = () => {
   };
 
   return (
-    <div className="wrapper">
+    <Wrapper className="wrapper">
       <input
         type="text"
         value={inputValue}
@@ -26,8 +27,12 @@ const Input = () => {
         placeholder="할 일을 적어주세요."
       />
       <button onClick={handleAddClick}>Add</button>
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  background-color: #ffedf0;
+`;
 
 export default Input;
