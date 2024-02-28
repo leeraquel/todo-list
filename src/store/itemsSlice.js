@@ -11,8 +11,11 @@ const itemsSlice = createSlice({
     addItem: (state, action) => {
       state.items.push(action.payload);
     },
+    deleteItem: (state, action) => {
+      state.items.splice(action.payload, 1);
+    },
   },
 });
 
-export const { addItem } = itemsSlice.actions;
+export const { addItem, deleteItem } = itemsSlice.actions;
 export default itemsSlice.reducer;

@@ -23,7 +23,7 @@ const Input = () => {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Enter item"
+        placeholder="할 일을 적어주세요."
       />
       <button onClick={handleAddClick}>Add</button>
     </div>
